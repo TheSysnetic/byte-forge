@@ -1,0 +1,25 @@
+.address-detail {
+  /* background-color: red; */
+  margin-top: 12px;
+}
+.class1 {
+  color: black !important;
+  padding-top: 100px;
+}
+.icon-sharink {
+  width: 70px;
+  height: 90px;
+}
+.icon-sharink2 {
+  width: 90px;
+  height: 90px;
+}
+.left-border {
+  border-left: 6px solid #45959f;
+}
+.buttom-padding {
+  padding-bottom: 230px !important;
+}
+.nav-item a:hover {
+  color: #45959f !important;
+}
