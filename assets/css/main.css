@@ -6,16 +6,15 @@
   position: relative;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 0px;
 }
 .brand-logo, 
 .default-logo, 
 .responsive-logo {
-    max-width: 128px;
+    width: 200px;
     transition: all 0.4s;
     position: relative;
-    margin-right: 35px;
 }
 @media (min-width: 576px) {
   .site-navbar {
@@ -377,8 +376,8 @@
 
 @media (min-width: 992px) {
   .site-menu-main .nav-link-item {
-    padding-top: 35px !important;
-    padding-bottom: 35px !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
     padding-left: 19px !important;
     padding-right: 19px !important;
   }
@@ -819,12 +818,13 @@
     background-color: rgba(0, 0, 0, 0.5);
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1098;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 4;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
+    
   }
   .menu-overlay.active {
     visibility: visible;

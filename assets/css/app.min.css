@@ -1551,7 +1551,7 @@ blockquote {
   position: relative;
 }
 header.tekup-header-section {
-  position: fixed;
+  position: fixed;  
   z-index: 9;
   width: 100%;
   top: 0;
@@ -1561,7 +1561,7 @@ header.tekup-header-section.sticky-menu {
   box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
 }
 header.tekup-header-section.light-color.sticky-menu {
-  background-color: var(--dark-bg);
+  background-color: rgba(0, 0, 0);
 }
 header.tekup-header-section.header-seven.sticky-menu {
   background-color: var(--white-bg);
@@ -1655,7 +1655,7 @@ header.tekup-header-section.header-seven.sticky-menu {
 }
 @media (max-width: 991px) {
   .tekup-header-bottom {
-    padding: 20px 0;
+    padding: 15px 0;
   }
 }
 .sticky-menu .border_bottom {
@@ -1768,8 +1768,9 @@ header.tekup-header-section.header-seven.sticky-menu {
   transition: 0.5s;
 }
 .tekup-header-info-box-wrap {
+  /* max-width: 35%; */
   display: flex;
-  margin-right: 35px;
+  /* margin-right: 35px; */
 }
 @media (max-width: 1099px) {
   .tekup-header-info-box-wrap {
@@ -1777,28 +1778,29 @@ header.tekup-header-section.header-seven.sticky-menu {
   }
 }
 .tekup-header-info-box-icon {
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   margin-right: 12px;
   border-radius: 100px;
-  background-color: var(--light-bg1);
+  background-color: var(--white-bg);
 }
 .tekup-header-info-box-icon i {
-  font-size: 26px;
+  font-size: 22px;
   color: var(--accent-color);
 }
 .tekup-header-info-box-data h6 {
-  color: var(--heading-color);
+  color: var(--white-color);
+  font-size: 20px;
 }
 .tekup-header-info-box-data p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
   line-height: 1;
-  color: var(--heading-color);
+  color: var(--white-color);
 }
 .tekup-header-barger {
   cursor: pointer;
@@ -2306,6 +2308,7 @@ header.tekup-header-section.header-seven.sticky-menu {
 }
 #tekup-default-btn.tekup-header-btn,
 .tekup-default-btn.tekup-header-btn {
+  width: 200px;
   padding: 14px 35px;
 }
 #tekup-default-btn.tekup-header-btn:hover::before,
@@ -2823,10 +2826,10 @@ h1.post__title {
 .tekup-hero-section {
   z-index: 0;
   position: relative;
-  padding: 260px 0 130px;
+  padding: 200px 0 130px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position:top;
   background-blend-mode: darken;
 }
 @media (max-width: 1199px) {
@@ -3782,10 +3785,11 @@ h1.post__title {
   display: flex;
   gap: 24px;
   transition: all 0.4s;
+  box-shadow: 0 16px 16px 0 rgba(13, 14, 29, 0.062);
 }
 .tekup-iconbox-wrap3:hover {
   background-color: var(--white-bg);
-  box-shadow: 0 16px 50px 0 rgba(13, 14, 29, 0.12);
+  box-shadow: 0 16px 20px 0 #45959f4d;
 }
 .tekup-iconbox-wrap3.border-all {
   border: 1px solid #e7e7e8;
@@ -5623,16 +5627,16 @@ span.total-amount {
   margin-top: 20px;
 }
 .tekup-section-padding {
-  padding: 130px 0px 180px;
+  padding: 180px 0px 180px;
 }
 @media (max-width: 991px) {
   .tekup-section-padding {
-    padding: 100px 0px 150px;
+    padding: 120px 0px 150px;
   }
 }
 @media (max-width: 767px) {
   .tekup-section-padding {
-    padding: 70px 0px 120px;
+    padding: 80px 0px 120px;
   }
 }
 .tekup-section-padding2 {

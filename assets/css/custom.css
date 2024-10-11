@@ -45,5 +45,19 @@
 }
 
 .side-logo {
-  padding: 24px 16px 24px;
+  display: none;
+}
+.side-logo{
+  @media (max-width:991px) {
+    display: block;
+    padding: 24px 16px;
+  }
+}
+.nav-call{
+  display:flex;
+}
+.nav-call{
+  @media (max-width:991px) {
+    display: none;
+  }
 }

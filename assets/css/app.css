@@ -3199,7 +3199,7 @@ h1.post__title {
   z-index: 0;
   position: relative;
   padding: 340px 0 130px;
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
