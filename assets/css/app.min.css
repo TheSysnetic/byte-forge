@@ -2823,29 +2823,32 @@ h1.post__title {
   }
 }
 .tekup-hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 0;
   position: relative;
   padding: 200px 0 130px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:top;
+  background-position:top center;
   background-blend-mode: darken;
 }
 @media (max-width: 1199px) {
   .tekup-hero-section {
-    padding: 350px 0 130px;
+    padding-bottom: 130px;
   }
 }
 @media (max-width: 991px) {
   .tekup-hero-section {
-    padding: 250px 0 100px;
+    padding-bottom:  100px;
   }
 }
 @media (max-width: 991px) {
   .tekup-hero-section {
-    padding: 170px 0 80px;
+    padding-bottom:  80px;
   }
-}
+} 
 .tekup-hero-section::before {
   content: "";
   left: 0;
@@ -2854,7 +2857,13 @@ h1.post__title {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media  (min-width:991px) {
+  .tekup-hero-section{
+    height: 100vh;
+  }
+ 
 }
 .tekup-hero-content {
   position: relative;
